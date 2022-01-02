@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 body {
-  background: #fff;
+  background: #2b2d37;
   scroll-behavior: smooth;
 }
 #spinner-box {
@@ -14,7 +14,7 @@ body {
   align-items: center;
 }
 .pulse-container {
-  background-color: #fff;
+  background-color: #23252f;
   width: 100%;
   height: 100%;
   display: flex;
@@ -49,10 +49,9 @@ body {
 
 /* root color */
 :root {
-  --color: #536dfe;
-  --hue-color: 250;
-  --nav-color: hsl(var(--hue-color), 8%, 15%);
-  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --color: #5c61ed;
+  --button: #3d3f4a;
+  --nav-color: #fff;
 }
 
 /* navbar */
@@ -78,11 +77,10 @@ body {
   transition: 0.3s ease-in-out;
 }
 .more:hover {
-  transform: scale(1.1);
   color: var(--color);
 }
 .more:focus {
-  color: var(--nav-color);
+  color: var(--color);
 }
 #nav-icon1 {
   width: 60px;
@@ -156,14 +154,17 @@ body {
   width: 450px;
   z-index: -1;
 }
+.hide {
+  overflow: hidden;
+}
 .col-xl-3 {
   margin-right: -70px;
 }
 .desc {
-  max-width: 500px;
-  font-size: 20px;
+  max-width: 420px;
+  font-size: 18px;
   font-family: "Poppins", sans-serif;
-  color: var(--text-color);
+  color: var(--nav-color);
 }
 #home {
   padding-top: 6rem;
@@ -171,15 +172,15 @@ body {
 h1 {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 900;
-  font-size: 75px;
+  font-size: 60px;
   color: var(--nav-color);
 }
 .header {
-  color: var(--color);
+  color: var(--nav-color);
 }
 .contact,
 .contact-2 {
-  background-color: var(--color);
+  background-color: var(--button);
   text-decoration: none;
   padding-top: 7px;
   padding-bottom: 7px;
@@ -189,47 +190,19 @@ h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   opacity: 1;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in;
+}
+.contact {
+  border: 3px solid var(--button);
 }
 .contact:hover {
-  transform: scale(1.05);
+  background-color: #23252f;
 }
-.contact-2:hover {
-  color: #fff;
-}
-.modal-title {
+.contact:hover a {
+  background-color: #23252f;
   color: var(--nav-color);
-  font-family: "Poppins", sans-serif;
 }
-.desc-modal {
-  color: #999;
-  font-family: "Poppins", sans-serif;
-}
-.link-contact {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-.link-contact:hover {
-  color: #999;
-  text-decoration: underline;
-}
-.btn-content:hover {
-  background-color: #fff;
-  color: var(--color);
-  border: 1px solid var(--color);
-}
-.col-xl-12 h1 span.cursor {
-  display: inline-block;
-  background-color: var(--nav-color);
-  margin-left: 0.1rem;
-  width: 3px;
-  height: 74px;
-  animation: blink 1s infinite;
-}
-.col-xl-12 h1 span.cursor.typing {
-  animation: none;
-}
+
 @keyframes blink {
   0% {
     background-color: var(--nav-color);
@@ -269,32 +242,37 @@ h1 {
 }
 @media screen and (max-width: 1199px) {
   .video-content {
-    width: 500px;
+    width: 450px;
     z-index: -1;
   }
 }
 @media screen and (max-width: 992px) {
   .video-content {
-    width: 300px;
-    z-index: -1;
+    display: none;
+    width: 250px;
+  }
+  .video {
+    display: block;
   }
 }
 
 /* Explore */
 #explore {
-  padding-top: 12rem;
-  margin-bottom: 550px;
+  padding-top: 5rem;
 }
-h4 a {
+h4 {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   font-weight: 500;
   font-size: 20px;
   color: var(--nav-color);
 }
-h4 a:hover {
+.category {
   color: var(--nav-color);
-  text-decoration: underline;
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 50px;
 }
 .title {
   font-family: "Poppins", sans-serif;
@@ -302,45 +280,45 @@ h4 a:hover {
   color: var(--text-color);
   margin-top: -3px;
 }
-.video-explore {
-  transition: 0.5s;
+.bi-caret-right::before {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: -10px;
+  left: -10px;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
 }
-.video-explore:hover {
-  -webkit-mask-image: linear-gradient(-75deg, #000 30%, rgba(0, 0, 0, 0.7) 50%, #000 70%);
-  -webkit-mask-size: 200%;
-  animation: shine 1s;
+.card a {
+  text-decoration: none;
+  color: var(--nav-color);
 }
-
-/* mengatur responesive video explore */
-@media screen and (max-width: 800px) {
-  .video-explore {
-    width: 288px;
-  }
+.card:hover .bi-caret-right::before {
+  transform: translateX(10px);
+  opacity: 1;
 }
-@media screen and (max-width: 1100px) {
-  .video-explore {
-    width: 288px;
-  }
+.see-all,
+.see-all-2 {
+  background-color: var(--color);
+  text-decoration: none;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  opacity: 1;
+  transition: 0.3s ease-in;
 }
-@media screen and (min-width: 1080px) {
-  .video-explore {
-    width: 288px;
-  }
+.see-all {
+  border: 3px solid var(--color);
 }
-@media screen and (max-width: 760px) {
-  .video-explore {
-    width: 100%;
-  }
+.see-all:hover {
+  background-color: #2b2d37;
 }
-
-@-webkit-keyframes shine {
-  from {
-    -webkit-mask-position: 150%;
-  }
-
-  to {
-    -webkit-mask-position: -50%;
-  }
+.see-all:hover a {
+  background-color: #2b2d37;
+  color: var(--nav-color);
 }
 
 ::-webkit-scrollbar {
@@ -371,16 +349,27 @@ h4 a:hover {
   color: #999;
   padding: 15px;
   font-size: 24px;
+  transition: 0.4s ease-in-out;
 }
-.license {
+.bi-instagram:hover {
+  color: var(--color);
+}
+.bi-youtube:hover {
+  color: var(--color);
+}
+.bi-facebook:hover {
+  color: var(--color);
+}
+.bi-github:hover {
+  color: var(--color);
+}
+.license,
+.license-2 {
   color: #999;
   font-size: 18px;
   text-decoration: none;
 }
-.license:hover {
+.license-2:hover {
   color: #999;
   text-decoration: underline;
-}
-.footer {
-  margin-bottom: 100px;
 }

@@ -3,11 +3,9 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>WebbTools | Fonts And Icons</title>
+  <title>WebbTools | Color Generator</title>
   <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="WebbTools-Image.css" />
@@ -51,10 +49,9 @@
   </div>
 
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: #fff" data-aos="fade"
-    data-aos-duration="100" data-aos-once="true">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: #23252f" data-aos="fade" data-aos-duration="100" data-aos-once="true">
     <div class="container">
-      <a class="navbar-brand" style="color: #536dfe;">Webb<span>Tools</span></a>
+      <a class="navbar-brand" style="color: #5c61ed;">Webb<span>Tools</span></a>
       <div id="nav-icon1" class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -65,40 +62,47 @@
         <ul class="nav">
           <li class="nav-item">
             <a class="nav-link more thin-text"
-              href="WebbTools.html">Home
+              href="index.html">Home
               &nbsp;&nbsp;</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle thin-text" href="" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              Images
+              Image
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item"
-                  href="WebbTools-Image.html#image">Images</a>
+                  href="Image.html#image">Image</a>
               </li>
               <li><a class="dropdown-item"
-                  href="WebbTools-Image.html#illustration">Illustrations</a>
+                href="Image.html#video">Video</a>
+            </li>
+              <li><a class="dropdown-item"
+                  href="Image.html#illustration">Illustration</a>
               </li>
               <li><a class="dropdown-item"
-                  href="WebbTools-Image.html#mockup">Mock Ups</a>
+                  href="Image.html#mockup">Mock Up</a>
               </li>
               <li><a class="dropdown-item"
-                  href="WebbTools-Image.html#pattern">Patterns</a>
+                  href="Image.html#pattern">Pattern</a>
               </li>
               <li><a class="dropdown-item"
-                  href="WebbTools-Image.html#image-utilities">Image
+                  href="Image.html#image-utilities">Image
                   Utilities</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle thin-text" href="" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              Fonts
+              Font
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#font">Fonts</a></li>
-              <li><a class="dropdown-item" href="#icon">Icons</a></li>
+            <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item"
+                  href="Font-and-icon.html#font">Font</a>
+              </li>
+              <li><a class="dropdown-item"
+                  href="Font-and-icon.html#icon">Icon</a>
+              </li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -106,13 +110,9 @@
               data-bs-toggle="dropdown" aria-expanded="false">
               Color
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item"
-                  href="WebbTools-Color.html#color">Color
-                  Generator</a></li>
-              <li><a class="dropdown-item"
-                  href="WebbTools-Color.html#gradient">Gradient</a>
-              </li>
+            <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#color">Color Generator</a></li>
+              <li><a class="dropdown-item" href="#gradient">Gradient</a></li>
             </ul>
           </li>
         </ul>
@@ -121,93 +121,130 @@
   </nav>
   <!-- akhir navbar -->
 
-  <div class="container justify-content-center text-center" style="margin-top: 180px;">
-    <div class="header-banner" data-aos="zoom-out" data-aos-duration="500" data-aos-once="true">
-      <h1 class="header">With Webb Tools, Your Projects</h1>
-      <h1 class="header">Development Will Be Faster.</h1>
-    </div>
+  <div class="background" style="background-color: #23252f; padding-top: 3rem; padding-bottom: 5rem;">
+    <div class="container justify-content-center text-center" style="margin-top: 180px; margin-bottom: 50px;">
+      <div class="hide">
+        <div class="header-banner" data-aos="slide-up" data-aos-duration="500" data-aos-once="true">
+          <h1 class="header">With Webb Tools, Your Projects</h1>
+          <h1 class="header">Development Will <span style="color: #6fcf97;">Be Faster.</span></h1>
+        </div>        
+      </div>
+    </div> 
   </div>
 
-  <div class="container slide" style="padding-top: 5rem;" id="font">
+  <div class="container slide" style="padding-top: 5rem;" id="color">
     <div class="favorit">
       <div class="text-start">
-        <p class="part">Fonts</i></p>
+        <p class="part">Color Generator</i></p>
       </div>
     </div>
     <div class="carousel owl-carousel">
       <div class="showcase-box">
-        <a href="https://fonts.google.com" target="blank"><img src="img/website-googlefont.png" alt="" srcset="" /></a>
-        <h4><a href="https://fonts.google.com" target="blank">Google Font</a></h4>
-        <p class="title">Find free and beautiful fonts for your projects</p>
+        <div class="hide">
+          <img src="img/website-colorhunt.png" alt="" srcset="" />
+        </div>
+        <a href="http://colorhunt.co">
+          <div class="image-overlay">
+            <h3>Go To Website</h3>
+          </div>
+        </a>
+        <h4 class="title"><a href="https://colorhunt.app" target="blank">Colorhunt <i class="bi bi-caret-right"></i></a></h4>
+        <p class="desc">Find beautiful color palettes for your projects</p>
       </div>
       <div class="showcase-box">
-        <a href="https://dafont.com" target="blank"><img src="img/website.dafont.png" alt="" srcset="" /></a>
-        <h4><a href="https://dafont.com" target="blank">Dafont</a></h4>
-        <p class="title">Find free and beautiful fonts for your projects</p>
+        <div class="hide">
+          <img src="img/website-coolors.png" alt="" srcset="" />
+        </div>
+        <a href="http://coolors.co">
+          <div class="image-overlay">
+            <h3>Go To Website</h3>
+          </div>
+        </a>
+        <h4 class="title"><a href="https://coolors.co" target="blank">Coolors <i class="bi bi-caret-right"></i></a></h4>
+        <p class="desc">Find beautiful color palettes for your projects</p>
       </div>
       <div class="showcase-box">
-        <a href="https://fontspace.com" target="blank"><img src="img/website-fontspace.png" alt="" srcset="" /></a>
-        <h4><a href="https://fontspace.com" target="blank">FontSpace</a></h4>
-        <p class="title">Find free and beautiful fonts for your projects</p>
+        <div class="hide">
+          <img src="img/website-huesnap.png" alt="" srcset="" />
+        </div>
+        <a href="http://huesnap.com">
+          <div class="image-overlay">
+            <h3>Go To Website</h3>
+          </div>
+        </a>
+        <h4 class="title"><a href="https://huesnap.com" target="blank">Huesnap <i class="bi bi-caret-right"></i></a></h4>
+        <p class="desc">Create beautiful color palettes for your projects</p>
       </div>
       <div class="showcase-box">
-        <a href="https://color.adobe.com/create/color-wheel" target="blank"><img src="img/website-abstractfont.png"
-            alt="" srcset="" /></a>
-        <h4><a href="https://color.adobe.com/create/color-wheel" target="blank">Abstract Fonts</a></h4>
-        <p class="title">Find free and beautiful fonts for your projects</p>
+        <div class="hide">
+          <img src="img/website-adobecolor.png" alt="" srcset="" /> 
+        </div>
+        <a href="http://color.adobe.com/create/color-wheel">
+          <div class="image-overlay">
+            <h3>Go To Website</h3>
+          </div>
+        </a>
+        <h4 class="title"><a href="https://color.adobe.com/create/color-wheel" target="blank">Adobe Color <i class="bi bi-caret-right"></i></a></h4>
+        <p class="desc">Create beautiful color palettes for your projects</p>
       </div>
     </div>
   </div>
 
-  <div class="container slide" style="margin-bottom: 550px;" id="icon">
+  <div class="container slide" style="margin-bottom: 550px;" id="gradient">
     <div class="favorit">
       <div class="text-start">
-        <p class="part">Icons</i></p>
+        <p class="part">Gradient</i></p>
       </div>
     </div>
     <div class="carousel owl-carousel">
       <div class="showcase-box">
-        <a href="https://heroicons.com" target="blank"><img src="img/website-heroicon.png" alt="" srcset="" /></a>
-        <h4><a href="https://heroicons.com" target="blank">HeroIcons</a></h4>
-        <p class="title">Find beautiful SVG icons for your projects</p>
+        <div class="hide">
+          <img src="img/website-gradienthunt.png" alt="" srcset="" /> 
+        </div>
+        <a href="http://gradienthunt.com">
+          <div class="image-overlay">
+            <h3>Go To Website</h3>
+          </div>
+        </a>
+        <h4 class="title"><a href="https://gradienthunt.com" target="blank">Gradient hunt <i class="bi bi-caret-right"></i></a></h4>
+        <p class="desc">Find beautiful color grad for your projects</p>
       </div>
       <div class="showcase-box">
-        <a href="https://fontawsome.com" target="blank"><img src="img/website-fontawsome.png" alt="" srcset="" /></a>
-        <h4><a href="https://fontawsome.com" target="blank">Font Awsome</a></h4>
-        <p class="title">Get vector icons and social logos for your projects</p>
+        <div class="hide">
+           <img src="img/website-colorspace.png" alt="" srcset="" /> 
+        </div>
+        <a href="http://mycolor.space/gradient3">
+          <div class="image-overlay">
+            <h3>Go To Website</h3>
+          </div>
+        </a>
+        <h4 class="title"><a href="https://mycolor.space/gradient3" target="blank">Color space <i class="bi bi-caret-right"></i></a></h4>
+        <p class="desc">Create beautiful color gradients for your projects</p>
       </div>
       <div class="showcase-box">
-        <a href="https://icons8.com" target="blank"><img src="img/website-icons8.png" alt="" srcset="" /></a>
-        <h4><a href="https://icons8.com" target="blank">Icons8</a></h4>
-        <p class="title">Download free icons for your projects</p>
-      </div>
-      <div class="showcase-box">
-        <a href="https://iconscout.com" target="blank"><img src="img/website-iconscout.png" alt="" srcset="" /></a>
-        <h4><a href="https://iconsscout.com" target="blank">IconScout</a></h4>
-        <p class="title">Download free icons for your projects</p>
-      </div>
-      <div class="showcase-box">
-        <a href="https://flaticon.com" target="blank"><img src="img/website-flat-icon.png" alt="" srcset="" /></a>
-        <h4><a href="https://flaticon.com" target="blank">FlatIcon</a></h4>
-        <p class="title">Download free icons and stickers for your projects</p>
-      </div>
-      <div class="showcase-box">
-        <a href="https://icons.getbootstrap.com/" target="blank"><img src="img/website-bootstrapicons.png" alt=""
-            srcset="" /></a>
-        <h4><a href="https://icons.getbootstrap.com/" target="blank">Bootstrap Icons</a></h4>
-        <p class="title">Find free icons for your projects</p>
+        <div class="hide">
+          <img src="img/website-uigradient.png" alt="" srcset="" /> 
+        </div>
+        <a href="http://uigradients.com">
+          <div class="image-overlay">
+            <h3>Go To Website</h3>
+          </div>
+        </a>
+        <h4 class="title"><a href="https://uigradients.com" target="blank">uiGradients <i class="bi bi-caret-right"></i></a></h4>
+        <p class="desc">Find beautiful color gradients for your projects</p>
       </div>
     </div>
   </div>
 
   <!-- footer -->
-  <div class="container text-center footer">
-    <p class="copyright">© 2021 WebbTools. All rights reserved | Created by Raya Alkautsar</p>
-    <p><a href="https://storyset.com/online" target="blank" class="license" style="margin-top: -50px">Online illustrations by Storyset</a></p>
-    <a href="https://www.instagram.com/r.alkautsarr/" target="blank"><i class="bi bi-instagram"></i></a>
-    <a href="404 not found.html" target="blank"><i class="bi bi-youtube"></i></a>
-    <a href="404 not found.html" target="blank"><i class="bi bi-facebook"></i></a>
-    <a href="https://github.com/RayaAlkautsar" target="blank"><i class="bi bi-github"></i></a>
+  <div class="background" style="background-color: #23252f; padding: 100px 0">
+    <div class="container text-center footer" id="footer">
+      <p class="copyright">© 2021 WebbTools. All rights reserved | Created by Raya Alkautsar</p>
+      <a href="https://www.instagram.com/r.alkautsarr/"><i class="bi bi-instagram" target="blank"></i></a>
+      <a target="blank"><i class="bi bi-youtube"></i></a>
+      <a target="blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://github.com/RayaAlkautsar" target="blank"><i class="bi bi-github"></i></a>
+    </div>
   </div>
   <!-- akhir footer -->
 

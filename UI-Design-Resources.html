@@ -3,9 +3,11 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>WebbTools | Color Generator</title>
+  <title>WebbTools | UI Design</title>
   <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="WebbTools-Image.css" />
@@ -32,7 +34,7 @@
   <meta name="msapplication-wide310x150logo" content="img/mstile-310x150.png" />
   <meta name="msapplication-square310x310logo" content="img/mstile-310x310.png" />
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
@@ -49,10 +51,10 @@
   </div>
 
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: #fff" data-aos="fade"
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: #23252f" data-aos="fade"
     data-aos-duration="100" data-aos-once="true">
     <div class="container">
-      <a class="navbar-brand" style="color: #536dfe;">Webb<span>Tools</span></a>
+      <a class="navbar-brand" style="color: #5c61ed;">Webb<span>Tools</span></a>
       <div id="nav-icon1" class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -63,54 +65,38 @@
         <ul class="nav">
           <li class="nav-item">
             <a class="nav-link more thin-text"
-              href="WebbTools.html">Home
+              href="index.html">Home
               &nbsp;&nbsp;</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle thin-text" href="" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              Images
+              Extension
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item"
-                  href="WebbTools-Image.html#image">Images</a>
+                  href="Chrome-Extension.html#extension">Chrome Extension</a>
               </li>
-              <li><a class="dropdown-item"
-                  href="WebbTools-Image.html#illustration">Illustrations</a>
-              </li>
-              <li><a class="dropdown-item"
-                  href="WebbTools-Image.html#mockup">Mock Ups</a>
-              </li>
-              <li><a class="dropdown-item"
-                  href="WebbTools-Image.html#pattern">Patterns</a>
-              </li>
-              <li><a class="dropdown-item"
-                  href="WebbTools-Image.html#image-utilities">Image
-                  Utilities</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle thin-text" href="" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              Fonts
+              UI Resources
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item"
-                  href="WebbTools-Font.html#font">Fonts</a>
-              </li>
-              <li><a class="dropdown-item"
-                  href="WebbTools-Font.html#icon">Icons</a>
-              </li>
+            <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#ui">UI Design Resources</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle  thin-text" href="" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              Color
+              Animation
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#color">Color Generator</a></li>
-              <li><a class="dropdown-item" href="#gradient">Gradient</a></li>
+            <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item"
+                  href="Animation-CSS.html#animation">Animation CSS</a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -119,79 +105,84 @@
   </nav>
   <!-- akhir navbar -->
 
-  <div class="container justify-content-center text-center" style="margin-top: 180px;">
-    <div class="header-banner" data-aos="zoom-out" data-aos-duration="500" data-aos-once="true">
-      <h1 class="header">With Webb Tools, Your Projects</h1>
-      <h1 class="header">Development Will Be Faster.</h1>
-    </div>
+  <div class="background" style="background-color: #23252f; padding-top: 3rem; padding-bottom: 5rem;">
+    <div class="container justify-content-center text-center" style="margin-top: 180px; margin-bottom: 50px;">
+      <div class="hide">
+        <div class="header-banner" data-aos="slide-up" data-aos-duration="500" data-aos-once="true">
+          <h1 class="header">With Webb Tools, Your Projects</h1>
+          <h1 class="header">Development Will <span style="color: #6fcf97;">Be Faster.</span></h1>
+        </div>        
+      </div>
+    </div> 
   </div>
 
-  <div class="container slide" style="padding-top: 5rem;" id="color">
+  <div class="container slide" style="padding-top: 5rem; margin-bottom: 550px;" id="ui">
     <div class="favorit">
       <div class="text-start">
-        <p class="part">Color Generator</i></p>
+        <p class="part">UI Design</i></p>
       </div>
     </div>
     <div class="carousel owl-carousel">
       <div class="showcase-box">
-        <a href="https://colorhunt.co" target="blank"><img src="img/website-colorhunt.png" alt="" srcset="" /></a>
-        <h4><a href="https://squoosh.app" target="blank">Colorhunt</a></h4>
-        <p class="title">Find beautiful color palettes for your projects</p>
+        <div class="hide">
+          <img src="img/website-dribbble.png" alt="" srcset="" />
+        </div>
+        <a href="http://dribbble.com">
+          <div class="image-overlay">
+            <h3>Go To Website</h3>
+          </div>
+        </a>
+        <h4 class="title"><a href="dribbble.com" target="blank">dribble <i class="bi bi-caret-right"></i></a></h4>
+        <p class="desc">Dribbble is the leading destination to find & showcase creative work and home to the world's best design professionals.</p>
       </div>
       <div class="showcase-box">
-        <a href="https://coolors.co" target="blank"><img src="img/website-coolors.png" alt="" srcset="" /></a>
-        <h4><a href="https://coolors.co" target="blank">Coolors</a></h4>
-        <p class="title">Find beautiful color palettes for your projects</p>
+        <div class="hide">
+          <img src="img/website-uidesigndaily.png" alt="" srcset="" />
+        </div>
+        <a href="http://uidesigndaily.com">
+          <div class="image-overlay">
+            <h3>Go To Website</h3>
+          </div>
+        </a>
+        <h4 class="title"><a href="uidesigndaily.com" target="blank">UI Design Daily <i class="bi bi-caret-right"></i></a></h4>
+        <p class="desc">You can find free web design and you can submit your UI Design</p>
       </div>
       <div class="showcase-box">
-        <a href="https://huesnap.com" target="blank"><img src="img/website-huesnap.png" alt="" srcset="" /></a>
-        <h4><a href="https://huesnap.com" target="blank">Huesnap</a></h4>
-        <p class="title">Create beautiful color palettes for your projects</p>
+        <div class="hide">
+          <img src="img/website-uiresources.png" alt="" srcset="" />
+        </div>
+        <a href="http://worlduidesignresources.com">
+          <div class="image-overlay">
+            <h3>Go To Website</h3>
+          </div>
+        </a>
+        <h4 class="title"><a href="https://www.worlduiresources.com/" target="blank">UI Resources <i class="bi bi-caret-right"></i></a></h4>
+        <p class="desc">Free design UI kits resources to Improve your creative workflow</p>
       </div>
       <div class="showcase-box">
-        <a href="https://color.adobe.com/create/color-wheel" target="blank"><img src="img/website-adobecolor.png" alt=""
-            srcset="" /></a>
-        <h4><a href="https://color.adobe.com/create/color-wheel" target="blank">Adobe Color</a></h4>
-        <p class="title">Create beautiful color palettes for your projects</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container slide" style="margin-bottom: 550px;" id="gradient">
-    <div class="favorit">
-      <div class="text-start">
-        <p class="part">Gradients</i></p>
-      </div>
-    </div>
-    <div class="carousel owl-carousel">
-      <div class="showcase-box">
-        <a href="https://gradienthunt.com" target="blank"><img src="img/website-gradienthunt.png" alt=""
-            srcset="" /></a>
-        <h4><a href="https://gradienthunt.com" target="blank">Gradient hunt</a></h4>
-        <p class="title">Find beautiful color grad for your projects</p>
-      </div>
-      <div class="showcase-box">
-        <a href="https://mycolor.space/gradient3" target="blank"><img src="img/website-colorspace.png" alt=""
-            srcset="" /></a>
-        <h4><a href="https://mycolor.space/gradient3" target="blank">Color space</a></h4>
-        <p class="title">Create beautiful color gradients for your projects</p>
-      </div>
-      <div class="showcase-box">
-        <a href="https://uigradients.com" target="blank"><img src="img/website-uigradient.png" alt="" srcset="" /></a>
-        <h4><a href="https://uigradients.com" target="blank">uiGradients</a></h4>
-        <p class="title">Find beautiful color gradients for your projects</p>
+        <div class="hide">
+          <img src="img/website-uihut.png" alt="" srcset="" />
+        </div>
+        <a href="http://uihut.com">
+          <div class="image-overlay">
+            <h3>Go To Website</h3>
+          </div>
+        </a>
+        <h4 class="title"><a href="uihut.com" target="blank">UIHUT <i class="bi bi-caret-right"></i></a></h4>
+        <p class="desc">Find and download free and premium web design inspiration in here</p>
       </div>
     </div>
   </div>
 
   <!-- footer -->
-  <div class="container text-center footer">
-    <p class="copyright">© 2021 WebbTools. All rights reserved | Created by Raya Alkautsar</p>
-    <p><a href="https://storyset.com/online" target="blank" class="license" style="margin-top: -50px">Online illustrations by Storyset</a></p>
-    <a href="https://www.instagram.com/r.alkautsarr/" target="blank"><i class="bi bi-instagram"></i></a>
-    <a href="404 not found.html" target="blank"><i class="bi bi-youtube"></i></a>
-    <a href="404 not found.html" target="blank"><i class="bi bi-facebook"></i></a>
-    <a href="https://github.com/RayaAlkautsar" target="blank"><i class="bi bi-github"></i></a>
+  <div class="background" style="background-color: #23252f; padding: 100px 0">
+    <div class="container text-center footer" id="footer">
+      <p class="copyright">© 2021 WebbTools. All rights reserved | Created by Raya Alkautsar</p>
+      <a href="https://www.instagram.com/r.alkautsarr/"><i class="bi bi-instagram" target="blank"></i></a>
+      <a target="blank"><i class="bi bi-youtube"></i></a>
+      <a target="blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://github.com/RayaAlkautsar" target="blank"><i class="bi bi-github"></i></a>
+    </div>
   </div>
   <!-- akhir footer -->
 

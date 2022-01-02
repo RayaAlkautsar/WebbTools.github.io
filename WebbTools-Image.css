@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 body {
-  background: #fff;
+  background: #2b2d37;
   scroll-behavior: smooth;
 }
 #spinner-box {
@@ -15,7 +15,7 @@ body {
 }
 .pulse-container {
   position: fixed;
-  background-color: #fff;
+  background-color: #2b2d37;
   width: 100%;
   height: 100%;
   display: flex;
@@ -50,10 +50,9 @@ body {
 
 /* root color */
 :root {
-  --color: #536dfe;
-  --hue-color: 250;
-  --nav-color: hsl(var(--hue-color), 8%, 15%);
-  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --color: #5c61ed;
+  --button: #3d3f4a;
+  --nav-color: #fff;
 }
 
 /* navbar */
@@ -83,6 +82,9 @@ body {
 }
 .more:focus {
   color: var(--nav-color);
+}
+.dropdown-menu {
+  background-color: #2b2d37;
 }
 .dropdown-item {
   color: var(--nav-color);
@@ -176,54 +178,105 @@ body {
   color: var(--nav-color);
   cursor: pointer;
 }
-.desc {
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  color: #b5b5b5;
-}
 .slide {
   padding-top: 5rem;
 }
 .carousel {
-  margin-bottom: -5rem;
+  margin-bottom: -5.5rem;
 }
-h4 a {
+.title a {
+  align-items: center;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   font-weight: 600;
   font-size: 20px;
   color: var(--nav-color);
+  margin-bottom: 15px;
 }
-h4 a:hover {
+.title a:hover {
   color: var(--nav-color);
-  text-decoration: underline;
 }
-.title {
+.bi-caret-right {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--nav-color);
+  left: -13px;
+}
+.bi-caret-right::before {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: -10px;
+  left: -10px;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.showcase-box:hover .bi-caret-right::before {
+  transform: translateX(10px);
+  opacity: 1;
+}
+.desc {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
-  color: var(--text-color);
-  margin-top: -3px;
+  color: var(--nav-color);
 }
 img {
+  display: block;
   height: auto;
-  border-radius: 15px;
-  margin-bottom: 15px;
   transition: 0.5s;
 }
-img:hover {
-  -webkit-mask-image: linear-gradient(-75deg, #000 30%, rgba(0, 0, 0, 0.7) 50%, #000 70%);
-  -webkit-mask-size: 200%;
-  animation: shine 1s;
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
 }
-
-@-webkit-keyframes shine {
-  from {
-    -webkit-mask-position: 150%;
-  }
-
-  to {
-    -webkit-mask-position: -50%;
-  }
+.overlay {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+  opacity: 0;
+}
+.image-overlay {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+.showcase-box:hover .image-overlay {
+  opacity: 1;
+}
+h3 {
+  color: #6fcf97;
+  font-size: 28px;
+  font-weight: 600;
+}
+.showcase-box .image-overlay > * {
+  transform: translateY(20px);
+  transition: 0.3s ease-in-out;
+}
+.showcase-box:hover .image-overlay > * {
+  transform: translateY(0);
+}
+.hide {
+  font-size: 18px;
+  color: var(--nav-color);
+  overflow: hidden;
+}
+.showcase-box .hide img {
+  transform: scale(1);
+  transition: 0.25s ease-in-out;
+}
+.showcase-box:hover .hide img {
+  transform: scale(1.3);
+  filter: brightness(10%) saturate(0);
 }
 .card {
   padding-top: 100px;
@@ -232,7 +285,7 @@ img:hover {
   font-family: "Poppins", sans-serif;
   font-size: 35px;
   font-weight: bold;
-  color: var(--nav-color);
+  color: var(--button);
   margin-bottom: 25px;
 }
 .btn-image {
@@ -274,16 +327,17 @@ img:hover {
   color: #999;
   padding: 15px;
   font-size: 24px;
+  transition: 0.4s ease-in-out;
 }
-.license {
-  color: #999;
-  font-size: 18px;
-  text-decoration: none;
+.bi-instagram:hover {
+  color: var(--color);
 }
-.license:hover {
-  color: #999;
-  text-decoration: underline;
+.bi-youtube:hover {
+  color: var(--color);
 }
-.footer {
-  margin-bottom: 100px;
+.bi-facebook:hover {
+  color: var(--color);
+}
+.bi-github:hover {
+  color: var(--color);
 }

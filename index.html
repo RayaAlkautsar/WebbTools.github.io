@@ -25,7 +25,7 @@
     <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="img/favicon-128.png" sizes="128x128" />
     <meta name="application-name" content="&nbsp;" />
-    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileColor" content="#23252F" />
     <meta name="msapplication-TileImage" content="img/mstile-144x144.png" />
     <meta name="msapplication-square70x70logo" content="img/mstile-70x70.png" />
     <meta name="msapplication-square150x150logo" content="img/mstile-150x150.png" />
@@ -46,9 +46,9 @@
     </div>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: #fff" data-aos="fade" data-aos-duration="100" data-aos-once="true">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: #23252f" data-aos="fade" data-aos-duration="100" data-aos-once="false">
       <div class="container">
-        <a class="navbar-brand" href="#home" style="color: #536dfe">Webb<span>Tools</span></a>
+        <a class="navbar-brand" href="#home" style="color: #5c61ed">Webb<span>Tools</span></a>
         <div id="nav-icon1" class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           <span class="navbar-toggler-icon"></span>
@@ -72,44 +72,43 @@
     <!-- akhir navbar -->
 
     <!-- content -->
-    <section class="background" data-aos="fade" data-aos-duration="100" data-aos-once="true">
+    <section class="background" style="background-color: #23252f; padding-bottom: 8rem">
       <div class="container" id="home">
-        <div class="row" style="margin-bottom: 30px; margin-top: 80px">
+        <div class="row" style="margin-top: 70px">
           <div class="col-xl-11 gambar">
-            <video autoplay loop muted class="video" style="width: 100%" data-aos="zoom-out" data-aos-duration="400" data-aos-once="true">
-              <source src="img/video-konten.mp4" />
-            </video>
-          </div>
-          <div class="col-xl-12 position-relative p-4">
-            <div class="position-absolute top-0 end-0">
-              <video autoplay loop muted class="video-content" style="margin-top: -25px; width: 450px; height: 450px" data-aos="zoom-out" data-aos-duration="500" data-aos-once="true">
+            <div class="hide">
+              <video autoplay loop muted class="video" style="width: 100%" data-aos="slide-left" data-aos-duration="400" data-aos-once="false">
                 <source src="img/video-konten.mp4" />
               </video>
             </div>
-            <div class="row">
-              <div class="col-xl-12">
-                <h1 class="header">Webb Tools.</h1>
-                <h1 class="header">Make <span class="typed-text" style="color: #171717"></span><span class="cursor">&nbsp;</span></h1>
+          </div>
+          <div class="col-xl-12 position-relative p-4">
+            <div class="position-absolute top-0 end-0">
+              <div class="hide">
+                <video autoplay loop muted class="video-content" data-aos="slide-left" data-aos-duration="500" data-aos-once="false">
+                  <source src="img/video-konten.mp4" />
+                </video>
               </div>
             </div>
-            <div class="desc">
-              <p>Webb Tools is a website that helps you to find tools for faster website development.</p>
-            </div>
-            <div class="btn-group mt-3">
-              <button type="button" class="btn contact" style="border-radius: 0 20px 20px" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <a class="contact-2">Contact Us <i class="bi bi-envelope-fill" style="margin-left: 5px"></i></a>
-              </button>
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <p class="desc-modal">You can send a message to our instagram <a href="https://www.instagram.com/r.alkautsarr/" class="link-contact">@r.alkautsarr</a> or to our gmail address rayaalkautsar47@gmail.com</p>
-                    </div>
+            <div class="content">
+              <div class="row">
+                <div class="hide">
+                  <div class="col-xl-12" data-aos="slide-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="false">
+                    <h1 class="header">Find a tools</h1>
+                    <h1 class="header">for your projects</h1>
                   </div>
+                </div>
+              </div>
+              <div class="hide">
+                <div class="desc" data-aos="slide-down" data-aos-duration="500" data-aos-delay="1000" data-aos-once="false">
+                  <p>Webb Tools is a website that helps you to find tools for faster website development.</p>
+                </div>
+              </div>
+              <div class="hide">
+                <div class="btn-group mt-3" data-aos="slide-right" data-aos-duration="500" data-aos-delay="1500" data-aos-once="false">
+                  <button class="contact" style="border-radius: 10px" data-bs-toggle="tooltip" data-bs-placement="top" title="DM to my instagram">
+                    <a href="https://www.instagram.com/r.alkautsarr/" class="contact-2">Contact Us <i class="bi bi-envelope-fill"></i> </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -121,46 +120,95 @@
 
     <!-- Explore -->
     <div class="container" id="explore">
+      <h2 class="category text-center"><span style="color: #6fcf97">Tools</span> Category</h2>
       <div class="carousel owl-carousel">
-        <div class="showcase-box">
-          <a href="WebbTools-Image.html">
-            <video autoplay loop muted class="video-explore">
-              <source src="img/explore-image-2.mp4" />
-            </video>
+        <div class="card border-0" style="background-color: #2b2d37">
+          <a href="Image.html">
+            <div class="hide">
+              <img src="img/explore-image.png" alt="" srcset="" />
+            </div>
+            <div class="hide">
+              <div class="card-body">
+                <h4>Image and Video <i class="bi bi-caret-right"></i></h4>
+                <p class="title">You can find websites that provide picture, video, illustration, pattern, mockup that can help you in your work.</p>
+              </div>
+            </div>
           </a>
-          <h4><a href="WebbTools-Image.html">Images</a></h4>
-          <p class="title">You can find websites that provide pictures, illustrations, patterns, mockups that can help you in your work.</p>
         </div>
-        <div class="showcase-box">
-          <a href="WebbTools-Font.html">
-            <video autoplay loop muted class="video-explore">
-              <source src="img/explore-font-2.mp4" />
-            </video>
+        <div class="card border-0" style="background-color: #2b2d37">
+          <a href="Font-and-icon.html">
+            <img src="img/explore-font.png" alt="" srcset="" />
+            <div class="card-body">
+              <h4>Font and Icon <i class="bi bi-caret-right"></i></h4>
+              <p class="title">You can find websites that provide various types of fonts and icons that you can use.</p>
+            </div>
           </a>
-          <h4><a href="WebbTools-Font.html">Fonts And Icons</a></h4>
-          <p class="title">You can find websites that provide various types of fonts and icons that you can use.</p>
         </div>
-        <div class="showcase-box">
-          <a href="WebbTools-Color.html">
-            <video autoplay loop muted class="video-explore">
-              <source src="img/explore-color-2.mp4" />
-            </video>
+        <div class="card border-0" style="background-color: #2b2d37">
+          <a href="Color-Generator.html">
+            <img src="img/explore-color.png" alt="" srcset="" />
+            <div class="card-body">
+              <h4>Color Generator <i class="bi bi-caret-right"></i></h4>
+              <p class="title">You can find websites that can generate what color you want.</p>
+            </div>
           </a>
-          <h4><a href="WebbTools-Color.html">Color Generator</a></h4>
-          <p class="title">You can find websites that can generate what color you want.</p>
         </div>
+      </div>
+      <div class="container justify-content- text-end">
+        <button class="see-all" style="border-radius: 10px">
+          <a href="" class="see-all-2">See All <i class="bi bi-arrow-right"></i> </a>
+        </button>
+      </div>
+    </div>
+
+    <div class="container" id="explore" style="margin-bottom: 550px">
+      <div class="carousel owl-carousel">
+        <div class="card border-0" style="background-color: #2b2d37">
+          <a href="Chrome-Extension.html">
+            <img src="img/explore-extension.png" alt="" srcset="" />
+            <div class="card-body">
+              <h4>Chrome Extension <i class="bi bi-caret-right"></i></h4>
+              <p class="title">You can find for chrome extension that help you to make your work easier.</p>
+            </div>
+          </a>
+        </div>
+        <div class="card border-0" style="background-color: #2b2d37">
+          <a href="UI-Design-Resources.html">
+            <img src="img/explore-ui-design.png" alt="" srcset="" />
+            <div class="card-body">
+              <h4>UI Design Resources <i class="bi bi-caret-right"></i></h4>
+              <p class="title">You can find websites that provide various kinds of UI Designs that can inspire you.</p>
+            </div>
+          </a>
+        </div>
+        <div class="card border-0" style="background-color: #2b2d37">
+          <a href="Animation-CSS.html">
+            <img src="img/explore-animation.png" alt="" srcset="" />
+            <div class="card-body">
+              <h4>Animation CSS <i class="bi bi-caret-right"></i></h4>
+              <p class="title">You can find CSS Animations that you can use in your projects.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="container justify-content- text-end">
+        <button class="see-all" style="border-radius: 10px">
+          <a href="" class="see-all-2">See All <i class="bi bi-arrow-right"></i> </a>
+        </button>
       </div>
     </div>
     <!-- Akhir Explore -->
 
     <!-- footer -->
-    <div class="container text-center footer" id="footer">
-      <p class="copyright">© 2021 WebbTools. All rights reserved | Created by Raya Alkautsar</p>
-      <p><a href="https://storyset.com/online" target="blank" class="license" style="margin-top: -50px">Online illustrations by Storyset</a></p>
-      <a href="https://www.instagram.com/r.alkautsarr/"><i class="bi bi-instagram" target="blank"></i></a>
-      <a href="404 not found.html" target="blank"><i class="bi bi-youtube"></i></a>
-      <a href="404 not found.html" target="blank"><i class="bi bi-facebook"></i></a>
-      <a href="https://github.com/RayaAlkautsar" target="blank"><i class="bi bi-github"></i></a>
+    <div class="background" style="background-color: #23252f; padding: 100px 0">
+      <div class="container text-center footer" id="footer">
+        <p class="copyright">© 2021 WebbTools. All rights reserved | Created by Raya Alkautsar</p>
+        <p class="license">Online illustrations by <a href="https://storyset.com/online" class="license-2" target="blank" style="margin-top: -50px">Storyset</a></p>
+        <a href="https://www.instagram.com/r.alkautsarr/"><i class="bi bi-instagram" target="blank"></i></a>
+        <a target="blank"><i class="bi bi-youtube"></i></a>
+        <a target="blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://github.com/RayaAlkautsar" target="blank"><i class="bi bi-github"></i></a>
+      </div>
     </div>
     <!-- akhir footer -->
 
@@ -170,15 +218,15 @@
     <script>
       $(".carousel").owlCarousel({
         margin: 100,
-        // autoplay: true,
+        // autoplay: false,
         // autoplayTimeout: 6000,
-        // autoplayHoverPause: true,
+        // autoplayHoverPause: false,
         responsive: {
           0: {
             items: 1,
             nav: false,
           },
-          770: {
+          760: {
             items: 2,
             nav: false,
           },
@@ -196,7 +244,7 @@
       AOS.init();
     </script>
 
-    <!-- type effect -->
+    <!-- type effect
     <script>
       const typedTextSpan = document.querySelector(".typed-text");
       const cursorSpan = document.querySelector(".cursor");
@@ -204,7 +252,7 @@
       const textArray = ["faster", "it easier"];
       const typingDelay = 100;
       const erasingDelay = 100;
-      const newTextDelay = 2000; // Delay between current and next text
+      const newTextDelay = 4000; // Delay between current and next text
       let textArrayIndex = 0;
       let charIndex = 0;
 
@@ -238,7 +286,7 @@
         // On DOM Load initiate the effect
         if (textArray.length) setTimeout(type, newTextDelay + 250);
       });
-    </script>
+    </script> -->
 
     <!-- script animation menu -->
     <script>

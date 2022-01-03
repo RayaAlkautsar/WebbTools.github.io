@@ -22,11 +22,11 @@ body {
   align-items: center;
 }
 .pulse-bubble {
-  width: 10px;
-  height: 10px;
-  margin: 5px;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
   border-radius: 50%;
-  background-color: #545454;
+  background-color: var(--color);
 }
 .pulse-bubble-1 {
   animation: pulse 0.4s ease 0s infinite alternate;
@@ -274,6 +274,9 @@ h4 {
   font-weight: 700;
   margin-bottom: 50px;
 }
+img {
+  width: 18rem;
+}
 .title {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
@@ -296,8 +299,8 @@ h4 {
   transform: translateX(10px);
   opacity: 1;
 }
-.see-all,
-.see-all-2 {
+.slide-more,
+.slide-more-2 {
   background-color: var(--color);
   text-decoration: none;
   padding-top: 3px;
@@ -310,15 +313,25 @@ h4 {
   opacity: 1;
   transition: 0.3s ease-in;
 }
-.see-all {
+.slide-more {
   border: 3px solid var(--color);
 }
-.see-all:hover {
-  background-color: #2b2d37;
-}
-.see-all:hover a {
-  background-color: #2b2d37;
+.slide-more:hover a {
   color: var(--nav-color);
+}
+.slide-more {
+  animation: bounce infinite 1s;
+}
+@keyframes bounce {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(10px);
+  }
+  40% {
+    transform: translateX(0);
+  }
 }
 
 ::-webkit-scrollbar {
@@ -336,6 +349,7 @@ h4 {
   background: var(--color);
   color: #fff;
 }
+
 /* footer */
 .information p,
 .copyright {

@@ -23,11 +23,11 @@ body {
   align-items: center;
 }
 .pulse-bubble {
-  width: 10px;
-  height: 10px;
-  margin: 5px;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
   border-radius: 50%;
-  background-color: #545454;
+  background-color: var(--color);
 }
 .pulse-bubble-1 {
   animation: pulse 0.4s ease 0s infinite alternate;
@@ -171,6 +171,9 @@ body {
 }
 
 /* slider */
+.carousel {
+  cursor: grab;
+}
 .header-banner h1 {
   font-size: 40px;
   font-weight: bold;
@@ -183,6 +186,9 @@ body {
 }
 .carousel {
   margin-bottom: -5.5rem;
+}
+.title {
+  margin-top: 10px;
 }
 .title a {
   align-items: center;
@@ -230,7 +236,7 @@ img {
   left: 0;
   bottom: 0;
   right: 0;
-  height: 70%;
+  height: 200px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -275,7 +281,7 @@ h3 {
   transition: 0.25s ease-in-out;
 }
 .showcase-box:hover .hide img {
-  transform: scale(1.3);
+  transform: scale(1.05);
   filter: brightness(10%) saturate(0);
 }
 .card {

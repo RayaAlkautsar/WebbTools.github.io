@@ -31,7 +31,7 @@
     <meta name="msapplication-square150x150logo" content="img/mstile-150x150.png" />
     <meta name="msapplication-wide310x150logo" content="img/mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="img/mstile-310x310.png" />
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   </head>
 
@@ -46,7 +46,7 @@
     </div>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: #23252f" data-aos="fade" data-aos-duration="100" data-aos-once="false">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: #23252f" data-aos="fade" data-aos-duration="100" data-aos-once="true">
       <div class="container">
         <a class="navbar-brand" href="#home" style="color: #5c61ed">Webb<span>Tools</span></a>
         <div id="nav-icon1" class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,12 +72,12 @@
     <!-- akhir navbar -->
 
     <!-- content -->
-    <section class="background" style="background-color: #23252f; padding-bottom: 8rem">
+    <section class="background" style="background-color: #23252f; padding-bottom: 9rem">
       <div class="container" id="home">
         <div class="row" style="margin-top: 70px">
           <div class="col-xl-11 gambar">
             <div class="hide">
-              <video autoplay loop muted class="video" style="width: 100%" data-aos="slide-left" data-aos-duration="600" data-aos-once="false">
+              <video autoplay loop muted class="video" style="width: 100%" data-aos="slide-left" data-aos-duration="600" data-aos-once="true">
                 <source src="img/video-konten.mp4" />
               </video>
             </div>
@@ -85,7 +85,7 @@
           <div class="col-xl-12 position-relative p-4">
             <div class="position-absolute top-0 end-0">
               <div class="hide">
-                <video autoplay loop muted class="video-content" data-aos="slide-left" data-aos-duration="600" data-aos-once="false">
+                <video autoplay loop muted class="video-content" style="width: 400px" data-aos="slide-left" data-aos-duration="600" data-aos-once="true">
                   <source src="img/video-konten.mp4" />
                 </video>
               </div>
@@ -93,19 +93,19 @@
             <div class="content">
               <div class="row">
                 <div class="hide">
-                  <div class="col-xl-12" data-aos="slide-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="false">
+                  <div class="col-xl-12" data-aos="slide-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true">
                     <h1 class="header">Find a tools</h1>
-                    <h1 class="header">for your projects</h1>
+                    <h1 class="header" style="margin-top: -15px">for your projects</h1>
                   </div>
                 </div>
               </div>
               <div class="hide">
-                <div class="desc" data-aos="slide-down" data-aos-duration="500" data-aos-delay="1000" data-aos-once="false">
+                <div class="desc" data-aos="slide-down" data-aos-duration="500" data-aos-delay="1000" data-aos-once="true">
                   <p>Webb Tools is a website that helps you to find tools for faster website development.</p>
                 </div>
               </div>
               <div class="hide">
-                <div class="btn-group mt-3" data-aos="slide-right" data-aos-duration="500" data-aos-delay="1500" data-aos-once="false">
+                <div class="btn-group mt-3" data-aos="slide-right" data-aos-duration="500" data-aos-delay="1500" data-aos-once="true">
                   <button class="contact" style="border-radius: 10px" data-bs-toggle="tooltip" data-bs-placement="top" title="DM to my instagram">
                     <a href="https://www.instagram.com/r.alkautsarr/" class="contact-2">Contact Us <i class="bi bi-envelope-fill"></i> </a>
                   </button>
@@ -125,7 +125,7 @@
         <div class="card border-0" style="background-color: #2b2d37">
           <a href="Image.html">
             <div class="hide">
-              <img src="img/explore-image.png" alt="" srcset="" />
+              <img src="img/explore-picture.png" alt="" srcset="" />
             </div>
             <div class="hide">
               <div class="card-body">
@@ -163,14 +163,14 @@
           </a>
         </div>
       </div>
-      <div class="container justify-content- text-end" style="margin-top: -24px">
+      <div class="container justify-content- text-end" style="margin-bottom: 80px; margin-top: -33px">
         <button class="slide-more" style="border-radius: 10px">
           <a class="slide-more-2">Slide <i class="bi bi-arrow-right"></i> </a>
         </button>
       </div>
     </div>
 
-    <div class="container" id="explore" style="margin-bottom: 550px">
+    <div class="container" style="margin-bottom: 550px">
       <div class="carousel owl-carousel">
         <div class="card border-0" style="background-color: #2b2d37">
           <a href="Chrome-Extension.html">
@@ -199,8 +199,17 @@
             </div>
           </a>
         </div>
+        <div class="card border-0" style="background-color: #2b2d37">
+          <a href="Image-Utility.html">
+            <img src="img/explore-image.png" alt="" srcset="" />
+            <div class="card-body">
+              <h4>Image Utilities <i class="bi bi-caret-right"></i></h4>
+              <p class="title">You can find websites that provide compress, resize, remove background image, and edit images.</p>
+            </div>
+          </a>
+        </div>
       </div>
-      <div class="container justify-content- text-end">
+      <div class="container justify-content- text-end" style="margin-top: -33px">
         <button class="slide-more" style="border-radius: 10px">
           <a class="slide-more-2">Slide <i class="bi bi-arrow-right"></i> </a>
         </button>
@@ -225,23 +234,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
     <script>
-      $(".carousel").owlCarousel({
-        margin: 100,
-        // autoplay: false,
-        // autoplayTimeout: 6000,
-        // autoplayHoverPause: false,
+      var owl = $(".owl-carousel");
+      owl.owlCarousel({
+        nav: true,
+        margin: 90,
         responsive: {
           0: {
             items: 1,
-            nav: false,
           },
-          760: {
+          600: {
             items: 2,
-            nav: false,
           },
           1000: {
             items: 3,
-            nav: false,
           },
         },
       });

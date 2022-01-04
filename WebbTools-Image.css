@@ -71,7 +71,7 @@ body {
 .thin-text {
   font-family: "Poppins", sans-serif;
   font-weight: lighter;
-  font-size: 17px;
+  font-size: 15px;
 }
 .more {
   color: var(--nav-color);

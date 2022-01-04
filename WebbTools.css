@@ -70,7 +70,7 @@ body {
 .thin-text {
   font-family: "Poppins", sans-serif;
   font-weight: lighter;
-  font-size: 17px;
+  font-size: 15px;
 }
 .more {
   color: var(--nav-color);
@@ -162,7 +162,7 @@ body {
 }
 .desc {
   max-width: 420px;
-  font-size: 18px;
+  font-size: 19px;
   font-family: "Poppins", sans-serif;
   color: var(--nav-color);
 }
@@ -182,18 +182,19 @@ h1 {
 .contact-2 {
   background-color: var(--button);
   text-decoration: none;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  font-size: 15px;
   opacity: 1;
   transition: 0.3s ease-in;
 }
 .contact {
-  border: 3px solid var(--button);
+  border: 2px solid var(--button);
 }
 .contact:hover {
   background-color: #23252f;
@@ -225,7 +226,7 @@ h1 {
 @media screen and (max-width: 600px) {
   .video-content {
     display: none;
-    width: 500px;
+    width: 400px;
   }
   .video {
     display: block;
@@ -234,7 +235,7 @@ h1 {
 @media screen and (max-width: 800px) {
   .video-content {
     display: none;
-    width: 500px;
+    width: 400px;
   }
   .video {
     display: block;
@@ -242,7 +243,7 @@ h1 {
 }
 @media screen and (max-width: 1199px) {
   .video-content {
-    width: 450px;
+    width: 400px;
     z-index: -1;
   }
 }
@@ -285,9 +286,9 @@ h4 {
 .category {
   color: var(--nav-color);
   font-family: "Poppins", sans-serif;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 34px;
 }
 img {
   width: 18rem;

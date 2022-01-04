@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>WebbTools | Extension And Icons</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="WebbTools.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="img/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="img/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="img/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="img/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="img/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="img/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="img/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="img/mstile-310x310.png" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  </head>
+
+  <style>
+    form {
+      border-radius: 10px;
+      background-color: #23252f;
+      padding: 20px;
+      width: 400px;
+      margin-bottom: 500px;
+    }
+    input,
+    button,
+    textarea,
+    label {
+      font-family: "Poppins", sans-serif;
+    }
+    textarea {
+      overflow: hidden;
+    }
+    .container-fluid {
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .title-contact {
+      font-family: "Poppins", sans-serif;
+      color: #5c61ed;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    .message {
+      color: #5c61ed;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+    }
+  </style>
+
+  <body>
+    <!-- loading -->
+    <div id="spinner-box">
+      <div class="pulse-container">
+        <div class="pulse-bubble pulse-bubble-1"></div>
+        <div class="pulse-bubble pulse-bubble-2"></div>
+        <div class="pulse-bubble pulse-bubble-3"></div>
+      </div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: #23252f" data-aos="fade" data-aos-duration="100" data-aos-once="true">
+      <div class="container">
+        <a class="navbar-brand" style="color: #5c61ed">Webb<span>Tools</span></a>
+        <div id="nav-icon1" class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link more thin-text" href="index.html">Home &nbsp;&nbsp;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- Form Contact -->
+    <div class="container-fluid" style="margin-top: 200px">
+      <form name="webbtools-contact-form" class="justify-content-center">
+        <div class="text">
+          <h2 class="title-contact">Contact Us</h2>
+        </div>
+        <div class="form-group">
+          <input class="form-control border-0 text-light" style="background-color: #2b2d37" name="name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name" />
+        </div>
+        <div class="form-group" style="margin-top: 20px">
+          <input class="form-control border-0 text-light" style="background-color: #2b2d37" name="status" id="exampleInputPassword1" placeholder="Status" />
+        </div>
+        <p class="message" style="margin-top: 20px; margin-bottom: 5px">Message</p>
+        <div class="form-floating" style="color: grey">
+          <textarea class="form-control border-0 text-light" style="background-color: #2b2d37" placeholder="Message" name="message" id="floatingTextarea2" style="height: 100px"></textarea>
+        </div>
+        <button type="submit" class="btn btn-kirim text-light" style="margin-top: 30px; background-color: #5c61ed">Send</button>
+        <button class="btn btn-loading d-none" style="margin-top: 30px; background-color: #5c61ed" type="button" disabled>
+          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+          Loading...
+        </button>
+        <div class="alert alert-success alert-dismissible fade show d-none mt-3" role="alert">
+          <strong>Thank you!</strong> Your message was sent successfully
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      </form>
+    </div>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- script animation menu -->
+    <script>
+      $(document).ready(function () {
+        $("#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4").click(function () {
+          $(this).toggleClass("open");
+        });
+      });
+    </script>
+
+    <!-- script loading -->
+    <script>
+      var loading = document.getElementById("spinner-box");
+
+      window.addEventListener("load", function () {
+        loading.style.display = "none";
+      });
+    </script>
+
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbwUTCRESBOdjW8PDusjN5FCjk1yYaXVcbc0XRtc3Gs-brQu6RT7rRZD5ygoG2M5FHa3ng/exec";
+      const form = document.forms["webbtools-contact-form"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // ketika tombol submit di klik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            // tampilkan alert
+            myAlert.classList.toggle("d-none");
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>

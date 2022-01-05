@@ -7,7 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="WebbTools.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
@@ -31,22 +30,15 @@
     <meta name="msapplication-square150x150logo" content="img/mstile-150x150.png" />
     <meta name="msapplication-wide310x150logo" content="img/mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="img/mstile-310x310.png" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   </head>
 
   <body>
-    <!-- loading -->
-    <div id="spinner-box">
-      <div class="pulse-container">
-        <div class="pulse-bubble pulse-bubble-1"></div>
-        <div class="pulse-bubble pulse-bubble-2"></div>
-        <div class="pulse-bubble pulse-bubble-3"></div>
-      </div>
-    </div>
-
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: #23252f" data-aos="fade" data-aos-duration="100" data-aos-once="true">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: #23252f">
       <div class="container">
         <a class="navbar-brand" href="#home" style="color: #5c61ed">Webb<span>Tools</span></a>
         <div id="nav-icon1" class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,7 +77,7 @@
           <div class="col-xl-12 position-relative p-4">
             <div class="position-absolute top-0 end-0">
               <div class="hide">
-                <video autoplay loop muted class="video-content" style="width: 400px" data-aos="slide-left" data-aos-duration="600" data-aos-once="true">
+                <video autoplay loop muted class="video-content" style="width: 400px">
                   <source src="img/video-konten.mp4" />
                 </video>
               </div>
@@ -93,19 +85,19 @@
             <div class="content">
               <div class="row">
                 <div class="hide">
-                  <div class="col-xl-12" data-aos="slide-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true">
+                  <div class="col-xl-12 head">
                     <h1 class="header">Find a tools</h1>
                     <h1 class="header" style="margin-top: -15px">for your projects</h1>
                   </div>
                 </div>
               </div>
               <div class="hide">
-                <div class="desc" data-aos="slide-down" data-aos-duration="500" data-aos-delay="1000" data-aos-once="true">
+                <div class="desc">
                   <p>Webb Tools is a website that helps you to find tools for faster website development.</p>
                 </div>
               </div>
               <div class="hide">
-                <div class="btn-group mt-3" data-aos="slide-right" data-aos-duration="500" data-aos-delay="1500" data-aos-once="true">
+                <div class="btn-group mt-3">
                   <button class="contact" style="border-radius: 10px">
                     <a href="Form-Contact.html" class="contact-2">Contact Us <i class="bi bi-envelope-fill"></i> </a>
                   </button>
@@ -119,48 +111,52 @@
     <!-- akhir konten -->
 
     <!-- Explore -->
-    <div class="container" id="explore">
+    <div class="container" id="explore" uk-parallax="opacity: 0,9;">
       <h2 class="category text-center"><span style="color: #6fcf97">Tools</span> Category</h2>
       <div class="carousel owl-carousel">
-        <div class="card border-0" style="background-color: #2b2d37">
-          <a href="Image.html">
-            <div class="hide">
+        <div class="hide">
+          <div class="card-1 border-0" style="background-color: #2b2d37">
+            <a href="Image.html">
               <img src="img/explore-picture.png" alt="" srcset="" />
-            </div>
-            <div class="hide">
               <div class="card-body">
                 <h4>Image and Video <i class="bi bi-caret-right"></i></h4>
                 <p class="title">You can find websites that provide picture, video, illustration, pattern, mockup that can help you in your work.</p>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
-        <div class="card border-0" style="background-color: #2b2d37">
-          <a href="Font-and-icon.html">
-            <img src="img/explore-font.png" alt="" srcset="" />
-            <div class="card-body">
-              <h4>Font and Icon <i class="bi bi-caret-right"></i></h4>
-              <p class="title">You can find websites that provide various types of fonts and icons that you can use.</p>
-            </div>
-          </a>
+        <div class="hide">
+          <div class="card-2 border-0" style="background-color: #2b2d37">
+            <a href="Font-and-icon.html">
+              <img src="img/explore-font.png" alt="" srcset="" />
+              <div class="card-body">
+                <h4>Font and Icon <i class="bi bi-caret-right"></i></h4>
+                <p class="title">You can find websites that provide various types of fonts and icons that you can use.</p>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="card border-0" style="background-color: #2b2d37">
-          <a href="Color-Generator.html">
-            <img src="img/explore-color.png" alt="" srcset="" />
-            <div class="card-body">
-              <h4>Color Generator <i class="bi bi-caret-right"></i></h4>
-              <p class="title">You can find websites that can generate what color you want.</p>
-            </div>
-          </a>
+        <div class="hide">
+          <div class="card-3 border-0" style="background-color: #2b2d37">
+            <a href="Color-Generator.html">
+              <img src="img/explore-color.png" alt="" srcset="" />
+              <div class="card-body">
+                <h4>Color Generator <i class="bi bi-caret-right"></i></h4>
+                <p class="title">You can find websites that can generate what color you want.</p>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="card border-0" style="background-color: #2b2d37">
-          <a href="SVG-Generator.html">
-            <img src="img/explore-svg.png" alt="" srcset="" />
-            <div class="card-body">
-              <h4>SVG Generator <i class="bi bi-caret-right"></i></h4>
-              <p class="title">You can find websites that can generate SVG according to your needs.</p>
-            </div>
-          </a>
+        <div class="hide">
+          <div class="card border-0" style="background-color: #2b2d37">
+            <a href="SVG-Generator.html">
+              <img src="img/explore-svg.png" alt="" srcset="" />
+              <div class="card-body">
+                <h4>SVG Generator <i class="bi bi-caret-right"></i></h4>
+                <p class="title">You can find websites that can generate SVG according to your needs.</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
       <div class="container justify-content- text-end" style="margin-bottom: 80px; margin-top: -33px">
@@ -170,43 +166,51 @@
       </div>
     </div>
 
-    <div class="container" style="margin-bottom: 550px">
+    <div class="container" style="margin-bottom: 550px" uk-parallax="opacity: 0,9;">
       <div class="carousel owl-carousel">
-        <div class="card border-0" style="background-color: #2b2d37">
-          <a href="Chrome-Extension.html">
-            <img src="img/explore-extension.png" alt="" srcset="" />
-            <div class="card-body">
-              <h4>Chrome Extension <i class="bi bi-caret-right"></i></h4>
-              <p class="title">You can find for chrome extension that help you to make your work easier.</p>
-            </div>
-          </a>
+        <div class="hide">
+          <div class="card-1 border-0" style="background-color: #2b2d37">
+            <a href="Chrome-Extension.html">
+              <img src="img/explore-extension.png" alt="" srcset="" />
+              <div class="card-body">
+                <h4>Chrome Extension <i class="bi bi-caret-right"></i></h4>
+                <p class="title">You can find for chrome extension that help you to make your work easier.</p>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="card border-0" style="background-color: #2b2d37">
-          <a href="UI-Design-Resources.html">
-            <img src="img/explore-ui-design.png" alt="" srcset="" />
-            <div class="card-body">
-              <h4>UI Design Resources <i class="bi bi-caret-right"></i></h4>
-              <p class="title">You can find websites that provide various kinds of UI Designs that can inspire you.</p>
-            </div>
-          </a>
+        <div class="hide">
+          <div class="card-2 border-0" style="background-color: #2b2d37">
+            <a href="UI-Design-Resources.html">
+              <img src="img/explore-ui-design.png" alt="" srcset="" />
+              <div class="card-body">
+                <h4>UI Design Resources <i class="bi bi-caret-right"></i></h4>
+                <p class="title">You can find websites that provide various kinds of UI Designs that can inspire you.</p>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="card border-0" style="background-color: #2b2d37">
-          <a href="Animation-CSS.html">
-            <img src="img/explore-animation.png" alt="" srcset="" />
-            <div class="card-body">
-              <h4>Animation CSS <i class="bi bi-caret-right"></i></h4>
-              <p class="title">You can find CSS Animations that you can use in your projects.</p>
-            </div>
-          </a>
+        <div class="hide">
+          <div class="card-3 border-0" style="background-color: #2b2d37">
+            <a href="Animation-CSS.html">
+              <img src="img/explore-animation.png" alt="" srcset="" />
+              <div class="card-body">
+                <h4>Animation CSS <i class="bi bi-caret-right"></i></h4>
+                <p class="title">You can find CSS Animations that you can use in your projects.</p>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="card border-0" style="background-color: #2b2d37">
-          <a href="Image-Utility.html">
-            <img src="img/explore-image.png" alt="" srcset="" />
-            <div class="card-body">
-              <h4>Image Utilities <i class="bi bi-caret-right"></i></h4>
-              <p class="title">You can find websites that provide compress, resize, remove background image, and edit images.</p>
-            </div>
-          </a>
+        <div class="hide">
+          <div class="card border-0" style="background-color: #2b2d37">
+            <a href="Image-Utility.html">
+              <img src="img/explore-image.png" alt="" srcset="" />
+              <div class="card-body">
+                <h4>Image Utilities <i class="bi bi-caret-right"></i></h4>
+                <p class="title">You can find websites that provide compress, resize, remove background image, and edit images.</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
       <div class="container justify-content- text-end" style="margin-top: -33px">
@@ -252,10 +256,15 @@
       });
     </script>
 
-    <!-- aos -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script>
-      AOS.init();
+      gsap.from("nav", { duration: 1, delay: 5.2, opacity: 0 });
+      gsap.from(".background", { duration: 1.5, y: "-100%", delay: 0.6, ease: "expo.inOut" });
+      gsap.from(".video-content", { duration: 1, x: "100%", delay: 2.2, ease: "expo.out" });
+      gsap.from(".head", { duration: 1, y: "101%", ease: "expo.inOut", delay: 2.8 });
+      gsap.from(".desc", { duration: 1, y: "-100%", ease: "expo.inOut", delay: 3.1 });
+      gsap.from(".btn-group", { duration: 1, x: "-100%", ease: "expo.out", delay: 4.1 });
     </script>
 
     <!-- type effect
@@ -308,15 +317,6 @@
         $("#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4").click(function () {
           $(this).toggleClass("open");
         });
-      });
-    </script>
-
-    <!-- script loading -->
-    <script>
-      var loading = document.getElementById("spinner-box");
-
-      window.addEventListener("load", function () {
-        loading.style.display = "none";
       });
     </script>
   </body>

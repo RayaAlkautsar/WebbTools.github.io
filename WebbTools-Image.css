@@ -293,7 +293,7 @@ h3 {
   transition: 0.25s ease-in-out;
 }
 .showcase-box:hover .hide img {
-  transform: scale(1.05);
+  transform: scale(1.1);
   filter: brightness(10%) saturate(0);
 }
 .card {

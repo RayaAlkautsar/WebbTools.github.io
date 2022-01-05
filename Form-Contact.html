@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>WebbTools | Extension And Icons</title>
+    <title>WebbTools | Form Contact</title>
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
 
@@ -42,14 +42,17 @@
       border-radius: 10px;
       background-color: #23252f;
       padding: 20px;
-      width: 400px;
+      width: 500px;
       margin-bottom: 500px;
     }
     input,
     button,
     textarea,
-    label {
+    label,
+    select,
+    .alert {
       font-family: "Poppins", sans-serif;
+      color: #6c757d;
     }
     textarea {
       overflow: hidden;
@@ -75,17 +78,8 @@
   </style>
 
   <body>
-    <!-- loading -->
-    <div id="spinner-box">
-      <div class="pulse-container">
-        <div class="pulse-bubble pulse-bubble-1"></div>
-        <div class="pulse-bubble pulse-bubble-2"></div>
-        <div class="pulse-bubble pulse-bubble-3"></div>
-      </div>
-    </div>
-
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: #23252f" data-aos="fade" data-aos-duration="100" data-aos-once="true">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: #23252f">
       <div class="container">
         <a class="navbar-brand" style="color: #5c61ed">Webb<span>Tools</span></a>
         <div id="nav-icon1" class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -105,40 +99,64 @@
     <!-- akhir navbar -->
 
     <!-- Form Contact -->
-    <div class="container-fluid" style="margin-top: 200px">
-      <form name="webbtools-contact-form" class="justify-content-center">
-        <div class="text">
-          <h2 class="title-contact">Contact Us</h2>
-        </div>
-        <div class="form-group">
-          <input class="form-control border-0 text-light" style="background-color: #2b2d37" name="name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name" />
-        </div>
-        <div class="form-group" style="margin-top: 20px">
-          <input class="form-control border-0 text-light" style="background-color: #2b2d37" name="status" id="exampleInputPassword1" placeholder="Status" />
-        </div>
-        <p class="message" style="margin-top: 20px; margin-bottom: 5px">Message</p>
-        <div class="form-floating" style="color: grey">
-          <textarea class="form-control border-0 text-light" style="background-color: #2b2d37" placeholder="Message" name="message" id="floatingTextarea2" style="height: 100px"></textarea>
-        </div>
-        <button type="submit" class="btn btn-kirim text-light" style="margin-top: 30px; background-color: #5c61ed">Send</button>
-        <button class="btn btn-loading d-none" style="margin-top: 30px; background-color: #5c61ed" type="button" disabled>
-          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-          Loading...
-        </button>
-        <div class="alert alert-success alert-dismissible fade show d-none mt-3" role="alert">
-          <strong>Thank you!</strong> Your message was sent successfully
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-      </form>
+    <div class="container-fluid" style="margin-top: 100px">
+      <div class="hide">
+        <form name="webbtools-contact-form" class="justify-content-center">
+          <div class="alert alert-success alert-dismissible fade show d-none mt-3 text-success" role="alert">
+            <strong>Thank you!</strong> Your message was sent successfully
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <div class="hide">
+            <div class="text">
+              <h2 class="title-contact">Contact Us</h2>
+            </div>
+          </div>
+          <div class="hide">
+            <div class="form-group">
+              <input class="form-control input-1 border-0 text-light" style="background-color: #2b2d37" name="name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name" autocomplete="off" />
+            </div>
+          </div>
+          <div class="hide">
+            <div class="form-group" style="margin-top: 20px">
+              <input type="email" class="form-control input-2 border-0 text-light" style="background-color: #2b2d37" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" autocomplete="off" />
+            </div>
+          </div>
+          <div class="hide">
+            <select class="form-select border-0" style="margin-top: 20px; background-color: #2b2d37; color: #6c757d" name="status" aria-label="Default select example">
+              <option value="1" style="background-color: #2b2d37; color: #6c757d">Other</option>
+              <option value="2" style="background-color: #2b2d37; color: #6c757d">Work</option>
+              <option value="3" style="background-color: #2b2d37; color: #6c757d">School</option>
+            </select>
+          </div>
+          <div class="hide">
+            <p class="message" style="margin-top: 20px; margin-bottom: 5px">Message</p>
+            <div class="form-floating" style="color: grey">
+              <textarea class="form-control input-3 border-0 text-light" style="background-color: #2b2d37" placeholder="Message" name="message" id="floatingTextarea2" style="height: 100px"></textarea>
+            </div>
+            <button type="submit" class="btn btn-kirim text-light" style="margin-top: 30px; background-color: #5c61ed">Send</button>
+            <button class="btn btn-loading d-none" style="margin-top: 30px; background-color: #5c61ed" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
-
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
-    <!-- aos -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script>
-      AOS.init();
+      gsap.from("nav", { duration: 1, delay: 4, opacity: 0 });
+      gsap.from("form", { duration: 1.5, y: "-100%", delay: 0.6, ease: "expo.inOut" });
+      gsap.from(".title-contact", { duration: 0.5, x: "-100%", delay: 2, ease: "expo.out" });
+      gsap.from(".input-1", { duration: 0.5, x: "-100%", ease: "expo.inOut", delay: 2.2 });
+      gsap.from(".input-2", { duration: 0.5, x: "-100%", ease: "expo.inOut", delay: 2.4 });
+      gsap.from(".form-select", { duration: 0.5, x: "-100%", ease: "expo.inOut", delay: 2.6 });
+      gsap.from(".message", { duration: 0.5, x: "-100%", delay: 2.8 });
+      gsap.from(".input-3", { duration: 0.5, x: "-100%", delay: 3 });
+      gsap.from(".btn-kirim", { duration: 0.3, x: "-100%", delay: 3.2 });
     </script>
 
     <!-- script animation menu -->
@@ -147,42 +165,6 @@
         $("#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4").click(function () {
           $(this).toggleClass("open");
         });
-      });
-    </script>
-
-    <!-- script loading -->
-    <script>
-      var loading = document.getElementById("spinner-box");
-
-      window.addEventListener("load", function () {
-        loading.style.display = "none";
-      });
-    </script>
-
-    <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbwUTCRESBOdjW8PDusjN5FCjk1yYaXVcbc0XRtc3Gs-brQu6RT7rRZD5ygoG2M5FHa3ng/exec";
-      const form = document.forms["webbtools-contact-form"];
-      const btnKirim = document.querySelector(".btn-kirim");
-      const btnLoading = document.querySelector(".btn-loading");
-      const myAlert = document.querySelector(".alert");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        // ketika tombol submit di klik
-        // tampilkan tombol loading, hilangkan tombol kirim
-        btnLoading.classList.toggle("d-none");
-        btnKirim.classList.toggle("d-none");
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            // tampilkan tombol kirim, hilangkan tombol loading
-            btnLoading.classList.toggle("d-none");
-            btnKirim.classList.toggle("d-none");
-            // tampilkan alert
-            myAlert.classList.toggle("d-none");
-            form.reset();
-            console.log("Success!", response);
-          })
-          .catch((error) => console.error("Error!", error.message));
       });
     </script>
   </body>

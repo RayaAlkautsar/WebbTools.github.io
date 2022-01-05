@@ -8,7 +8,6 @@
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="WebbTools-Image.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
@@ -32,26 +31,16 @@
   <meta name="msapplication-square150x150logo" content="img/mstile-150x150.png" />
   <meta name="msapplication-wide310x150logo" content="img/mstile-310x150.png" />
   <meta name="msapplication-square310x310logo" content="img/mstile-310x310.png" />
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 
 <body>
 
-  <!-- loading -->
-  <div id="spinner-box">
-    <div class="pulse-container">
-      <div class="pulse-bubble pulse-bubble-1"></div>
-      <div class="pulse-bubble pulse-bubble-2"></div>
-      <div class="pulse-bubble pulse-bubble-3"></div>
-    </div>
-  </div>
-
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: #23252f" data-aos="fade"
-    data-aos-duration="100" data-aos-once="true">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: #23252f">
     <div class="container">
       <a class="navbar-brand" style="color: #5c61ed;">Webb<span>Tools</span></a>
       <div id="nav-icon1" class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
@@ -124,10 +113,10 @@
   </nav>
   <!-- akhir navbar -->
 
-  <div class="background" style="background-color: #23252f; padding-top: 3rem; padding-bottom: 5rem;">
+  <div class="background" style="background-color: #23252f; padding-top: 3rem; padding-bottom: 7rem;">
     <div class="container justify-content-center text-center" style="margin-top: 180px; margin-bottom: 50px;">
       <div class="hide">
-        <div class="header-banner" data-aos="slide-up" data-aos-duration="500" data-aos-once="true">
+        <div class="header-banner">
           <h1 class="header">With Webb Tools, Your Projects</h1>
           <h1 class="header">Development Will <span style="color: #6fcf97;">Be Faster.</span></h1>
         </div>        
@@ -135,7 +124,7 @@
     </div> 
   </div>
 
-  <div class="container slide" id="image">
+  <div class="container slide" id="image" uk-parallax="opacity: 0,9;">
     <div class="favorit">
       <div class="text-start">
         <p class="part">Image</i></p>
@@ -229,7 +218,7 @@
     </div>
   </div>
 
-  <div class="container slide mb-4" id="video">
+  <div class="container slide mb-4" id="video" uk-parallax="opacity: 0,9;">
     <div class="favorit">
       <div class="text-start">
         <p class="part">Video</i></p>
@@ -275,7 +264,7 @@
     </div>
   </div>
 
-  <div class="container slide" id="illustration">
+  <div class="container slide" id="illustration" uk-parallax="opacity: 0,9;">
     <div class="favorit">
       <div class="text-start">
         <p class="part">Illustration</i></p>
@@ -345,7 +334,7 @@
     </div>
   </div>
 
-  <div class="container slide" id="mockup">
+  <div class="container slide" id="mockup" uk-parallax="opacity: 0,9;">
     <div class="favorit">
       <div class="text-start">
         <p class="part">Mock Up</i></p>
@@ -427,7 +416,7 @@
     </div>
   </div>
 
-  <div class="container slide" id="pattern" style="margin-bottom: 550px;">
+  <div class="container slide" id="pattern" style="margin-bottom: 550px;" uk-parallax="opacity: 0,9;">
     <div class="favorit">
       <div class="text-start">
         <p class="part">Pattern</i></p>
@@ -487,7 +476,7 @@
 
   <!-- footer -->
   <div class="background" style="background-color: #23252f; padding: 100px 0">
-    <div class="container text-cGo footer" id="footer">
+    <div class="container text-center footer" id="footer">
       <p class="copyright">© 2021 WebbTools. All rights reserved | Created by Raya Alkautsar</p>
       <a href="https://www.instagram.com/r.alkautsarr/"><i class="bi bi-instagram" target="blank"></i></a>
       <a target="blank"><i class="bi bi-youtube"></i></a>
@@ -526,55 +515,13 @@
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
     crossorigin="anonymous"></script>
 
-  <!-- aos -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
-  <!-- type effect -->
-  <script>
-    const typedTextSpan = document.querySelector(".typed-text");
-    const cursorSpan = document.querySelector(".cursor");
-
-    const textArray = ["will be faster", "becomes easier"];
-    const typingDelay = 100;
-    const erasingDelay = 100;
-    const newTextDelay = 2000; // Delay between current and next text
-    let textArrayIndex = 0;
-    let charIndex = 0;
-
-    function type() {
-      if (charIndex < textArray[textArrayIndex].length) {
-        if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-        typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-        charIndex++;
-        setTimeout(type, typingDelay);
-      } else {
-        cursorSpan.classList.remove("typing");
-        setTimeout(erase, newTextDelay);
-      }
-    }
-
-    function erase() {
-      if (charIndex > 0) {
-        if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
-        charIndex--;
-        setTimeout(erase, erasingDelay);
-      } else {
-        cursorSpan.classList.remove("typing");
-        textArrayIndex++;
-        if (textArrayIndex >= textArray.length) textArrayIndex = 0;
-        setTimeout(type, typingDelay + 1100);
-      }
-    }
-
-    document.addEventListener("DOMContentLoaded", function () {
-      // On DOM Load initiate To effect
-      if (textArray.length) setTimeout(type, newTextDelay + 250);
-    });
-  </script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script>
+      gsap.from("nav", { duration: 1, delay: 3, opacity: 0 });
+      gsap.from(".background", { duration: 1.5, y: "-100%", delay: 0.6, ease: "expo.inOut" });
+      gsap.from(".header-banner", { duration: 1, y: "105%", delay: 2, ease: "expo.inOut" });
+    </script>
 
   <!-- script animation menu -->
   <script>
@@ -583,15 +530,6 @@
         $(this).toggleClass('open');
       });
     });
-  </script>
-
-  <!-- script loading -->
-  <script>
-    var loading = document.getElementById("spinner-box");
-
-window.addEventListener("load", function () {
-  loading.style.display = "none";
-});
   </script>
 
 </body>

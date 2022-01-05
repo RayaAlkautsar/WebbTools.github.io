@@ -311,7 +311,31 @@ img {
   text-decoration: none;
   color: var(--nav-color);
 }
+.card-1 a {
+  text-decoration: none;
+  color: var(--nav-color);
+}
+.card-2 a {
+  text-decoration: none;
+  color: var(--nav-color);
+}
+.card-3 a {
+  text-decoration: none;
+  color: var(--nav-color);
+}
 .card:hover .bi-caret-right::before {
+  transform: translateX(10px);
+  opacity: 1;
+}
+.card-1:hover .bi-caret-right::before {
+  transform: translateX(10px);
+  opacity: 1;
+}
+.card-2:hover .bi-caret-right::before {
+  transform: translateX(10px);
+  opacity: 1;
+}
+.card-3:hover .bi-caret-right::before {
   transform: translateX(10px);
   opacity: 1;
 }
@@ -338,6 +362,7 @@ img {
 .slide-more {
   animation: bounce infinite 1s;
 }
+
 @keyframes bounce {
   0% {
     transform: translateX(0);

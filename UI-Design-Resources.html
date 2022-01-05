@@ -9,7 +9,6 @@
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="WebbTools-Image.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
@@ -35,24 +34,12 @@
   <meta name="msapplication-square310x310logo" content="img/mstile-310x310.png" />
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 
 <body>
 
-  <!-- loading -->
-  <div id="spinner-box">
-    <div class="pulse-container">
-      <div class="pulse-bubble pulse-bubble-1"></div>
-      <div class="pulse-bubble pulse-bubble-2"></div>
-      <div class="pulse-bubble pulse-bubble-3"></div>
-    </div>
-  </div>
-
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: #23252f" data-aos="fade"
-    data-aos-duration="100" data-aos-once="true">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: #23252f">
     <div class="container">
       <a class="navbar-brand" style="color: #5c61ed;">Webb<span>Tools</span></a>
       <div id="nav-icon1" class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
@@ -118,7 +105,7 @@
   <div class="background" style="background-color: #23252f; padding-top: 3rem; padding-bottom: 5rem;">
     <div class="container justify-content-center text-center" style="margin-top: 180px; margin-bottom: 50px;">
       <div class="hide">
-        <div class="header-banner" data-aos="slide-up" data-aos-duration="500" data-aos-once="true">
+        <div class="header-banner">
           <h1 class="header">With Webb Tools, Your Projects</h1>
           <h1 class="header">Development Will <span style="color: #6fcf97;">Be Faster.</span></h1>
         </div>        
@@ -282,11 +269,14 @@
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
     crossorigin="anonymous"></script>
 
-  <!-- aos -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script>
+      gsap.from("nav", { duration: 1, delay: 3, opacity: 0 });
+      gsap.from(".background", { duration: 1.5, y: "-100%", delay: 0.6, ease: "expo.inOut" });
+      gsap.from(".header-banner", { duration: 1, y: "105%", delay: 2, ease: "expo.inOut" });
+    </script>
+
 
   <!-- script animation menu -->
   <script>
@@ -294,15 +284,6 @@
       $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
         $(this).toggleClass('open');
       });
-    });
-  </script>
-
-  <!-- script loading -->
-  <script>
-    var loading = document.getElementById("spinner-box");
-
-    window.addEventListener("load", function () {
-      loading.style.display = "none";
     });
   </script>
 

@@ -53,47 +53,38 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link more thin-text"
-              href="index.html">Home
-              &nbsp;&nbsp;</a>
+            <a class="nav-link more thin-text" href="index.html">Home&nbsp;&nbsp;</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle thin-text" href="" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Extension
-            </a>
+            <a class="nav-link dropdown-toggle thin-text" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Extension</a>
             <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item"
-                  href="Chrome_Extension.html#extension">Chrome Extension</a>
-              </li>
+              <li><a class="dropdown-item" href="Chrome-Extension.html#top">Chrome Extension</a></li>
+              <li><hr class="dropdown-divider" style="background-color: #5c61ed;"></li>
+              <li><a class="dropdown-item" href="Chrome_Extension.html#extension">Chrome Extension</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle thin-text" href="" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              UI Resources
-            </a>
+            <a class="nav-link dropdown-toggle thin-text" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">UI Resources</a>
             <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="UI-Design-Resources.html#top">UI Design Resources</a></li>
+              <li><hr class="dropdown-divider" style="background-color: #5c61ed;"></li>
               <li><a class="dropdown-item" href="UI-Design-Resources.html#ui">UI Design Resources</a></li>
               <li><a class="dropdown-item" href="UI-Design-Resources.html#mobile-ui">UI Design Resources (Mobile)</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle  thin-text" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Animation
-            </a>
+            <a class="nav-link dropdown-toggle  thin-text" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Animation</a>
             <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
-              <li>
-                  <a class="dropdown-item" href="Animation-CSS#animation">Animation CSS</a>
-              </li>
+              <li><a class="dropdown-item" href="#top">Animation CSS</a></li>
+              <li><hr class="dropdown-divider" style="background-color: #5c61ed;"></li>
+              <li><a class="dropdown-item" href="#animation">Animation CSS</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle thin-text" href="" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Image Utility
-            </a>
+            <a class="nav-link dropdown-toggle thin-text" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Image Utility</a>
             <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="Image-Utility.html#top">Image Utility</a></li>
+              <li><hr class="dropdown-divider" style="background-color: #5c61ed;"></li>
               <li><a class="dropdown-item" href="Image-Utility.html#image-utility">Image Utility</a></li>
             </ul>
           </li>
@@ -103,7 +94,7 @@
   </nav>
   <!-- akhir navbar -->
 
-  <div class="background" style="background-color: #23252f; padding-top: 3rem; padding-bottom: 7rem;">
+  <div class="background" style="background-color: #23252f; padding-top: 3rem; padding-bottom: 1rem;" id="top">
     <div class="container justify-content-center text-center" style="margin-top: 180px; margin-bottom: 50px;">
       <div class="hide">
         <div class="header-banner">
@@ -112,6 +103,15 @@
         </div>        
       </div>
     </div> 
+    <div class="hide">
+      <div class="row scroll text-center" style="margin-top: 164px">
+        <div class="scroll-down">
+          <button class="down" style="border-radius: 10px">
+            <a href="#animation" class="down"><i class="bi bi-mouse"></i> scroll down</a>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="container slide" style="padding-top: 5rem; margin-bottom: 550px;" id="animation" uk-parallax="opacity: 0,9;">
@@ -218,6 +218,7 @@
       gsap.from("nav", { duration: 1, delay: 3, opacity: 0 });
       gsap.from(".background", { duration: 1.5, y: "-100%", delay: 0.6, ease: "expo.inOut" });
       gsap.from(".header-banner", { duration: 1, y: "105%", delay: 2, ease: "expo.inOut" });
+      gsap.from(".scroll", { duration: 1, y: "107%", ease: "expo.inOut", delay: 3.8 });
     </script>
 
   <!-- script animation menu -->

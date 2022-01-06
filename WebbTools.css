@@ -161,8 +161,8 @@ body {
   margin-right: -70px;
 }
 .desc {
-  max-width: 420px;
-  font-size: 19px;
+  max-width: 400px;
+  font-size: 16px;
   font-family: "Poppins", sans-serif;
   color: var(--nav-color);
 }
@@ -170,22 +170,31 @@ body {
   padding-top: 6rem;
 }
 h1 {
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 900;
-  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
   color: var(--nav-color);
 }
 .header {
   color: var(--nav-color);
 }
-.contact,
-.contact-2 {
+.explore {
   background-color: var(--button);
   text-decoration: none;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 15px;
-  padding-right: 15px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  transition: 0.3s ease-in;
+}
+.explore-2 {
+  border-radius: 10px;
+  background-color: var(--button);
+  text-decoration: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 19px;
+  padding-right: 19px;
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -193,15 +202,47 @@ h1 {
   opacity: 1;
   transition: 0.3s ease-in;
 }
-.contact {
+.explore {
+  border: 2px solid transparent;
+}
+.explore-2 {
   border: 2px solid var(--button);
 }
-.contact:hover {
+.explore-2:hover {
   background-color: #23252f;
 }
-.contact:hover a {
+.explore-2:hover button {
   background-color: #23252f;
   color: var(--nav-color);
+}
+.down {
+  background-color: transparent;
+  border: 1px solid transparent;
+  text-decoration: none;
+  color: #999;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.bi-mouse {
+  color: var(--color);
+}
+.down:hover {
+  color: #999;
+}
+.down {
+  animation: bounce-2 1s infinite;
+}
+@keyframes bounce-2 {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-5px);
+  }
+  40% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes blink {
@@ -380,11 +421,9 @@ img {
 }
 ::-webkit-scrollbar-thumb {
   background-color: grey;
-  border-radius: 6px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--color);
-  border-radius: 6px;
 }
 ::selection {
   background: var(--color);

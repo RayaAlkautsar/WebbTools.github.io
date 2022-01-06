@@ -193,6 +193,35 @@ body {
   color: var(--nav-color);
   cursor: pointer;
 }
+.down {
+  background-color: transparent;
+  border: 1px solid transparent;
+  text-decoration: none;
+  color: #999;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.bi-mouse {
+  color: var(--color);
+}
+.down:hover {
+  color: #999;
+}
+.down {
+  animation: bounce-2 1s infinite;
+}
+@keyframes bounce-2 {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-5px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+}
 .slide {
   padding-top: 5rem;
 }
@@ -322,11 +351,9 @@ h3 {
 }
 ::-webkit-scrollbar-thumb {
   background-color: grey;
-  border-radius: 6px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--color);
-  border-radius: 6px;
 }
 ::selection {
   background: var(--color);

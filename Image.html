@@ -52,15 +52,13 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link more thin-text"
-              href="index.html">Home &nbsp;&nbsp;</a>
+            <a class="nav-link more thin-text" href="index.html">Home &nbsp;&nbsp;</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle thin-text" href="" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Image
-            </a>
+            <a class="nav-link dropdown-toggle thin-text" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Image</a>
             <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#top">Image and Video</a></li>
+              <li><hr class="dropdown-divider" style="background-color: #5c61ed;"></li>
               <li><a class="dropdown-item" href="#image">Image</a></li>
               <li><a class="dropdown-item" href="#video">Video</a></li>
               <li><a class="dropdown-item" href="#illustration">Illustration</a></li>
@@ -69,42 +67,29 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle thin-text" href="" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Fonts
-            </a>
+            <a class="nav-link dropdown-toggle thin-text" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Font</a>
             <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item"
-                  href="Font-and-icon.html#font">Fonts</a>
-              </li>
-              <li><a class="dropdown-item"
-                  href="Font-and-icon.html#icon">Icons</a>
-              </li>
+              <li><a class="dropdown-item" href="Font-and-icon.html#top">Font and Icon</a></li>
+              <li><hr class="dropdown-divider" style="background-color: #5c61ed;"></li>
+              <li><a class="dropdown-item" href="Font-and-icon.html#font">Font</a></li>
+              <li><a class="dropdown-item" href="Font-and-icon.html#icon">Icon</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle thin-text" href="" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Color
-            </a>
+            <a class="nav-link dropdown-toggle thin-text" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Color</a>
             <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item"
-                  href="Color-Generator.html#color">Color
-                  Generator</a></li>
-              <li><a class="dropdown-item"
-                  href="Color-Generator.html#gradient">Gradient</a>
-              </li>
+              <li><a class="dropdown-item" href="Color-Gnerator.html#top">Color Generator</a></li>
+              <li><hr class="dropdown-divider" style="background-color: #5c61ed;"></li>
+              <li><a class="dropdown-item" href="Color-Generator.html#color">Color Generator</a></li>
+              <li><a class="dropdown-item" href="Color-Generator.html#gradient">Gradient</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle thin-text" href="" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              SVG Generator
-            </a>
+            <a class="nav-link dropdown-toggle thin-text" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">SVG Generator</a>
             <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="SVG-Generator.html#SVG">SVG Generator</a>
-                </li>
+              <li><a class="dropdown-item" href="SVG-Generator#top">SVG Generator</a></li>
+              <li><hr class="dropdown-divider" style="background-color: #5c61ed;"></li>
+              <li><a class="dropdown-item" href="SVG-Generator.html#SVG">SVG Generator</a></li>
             </ul>
           </li>
         </ul>
@@ -113,7 +98,7 @@
   </nav>
   <!-- akhir navbar -->
 
-  <div class="background" style="background-color: #23252f; padding-top: 3rem; padding-bottom: 7rem;">
+  <div class="background" style="background-color: #23252f; padding-top: 3rem; padding-bottom: 1rem;" id="top">
     <div class="container justify-content-center text-center" style="margin-top: 180px; margin-bottom: 50px;">
       <div class="hide">
         <div class="header-banner">
@@ -122,6 +107,15 @@
         </div>        
       </div>
     </div> 
+    <div class="hide">
+      <div class="row scroll text-center" style="margin-top: 164px">
+        <div class="scroll-down">
+          <button class="down" style="border-radius: 10px">
+            <a href="#image" class="down"><i class="bi bi-mouse"></i> scroll down</a>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="container slide" id="image" uk-parallax="opacity: 0,9;">
@@ -521,6 +515,7 @@
       gsap.from("nav", { duration: 1, delay: 3, opacity: 0 });
       gsap.from(".background", { duration: 1.5, y: "-100%", delay: 0.6, ease: "expo.inOut" });
       gsap.from(".header-banner", { duration: 1, y: "105%", delay: 2, ease: "expo.inOut" });
+      gsap.from(".scroll", { duration: 1, y: "107%", ease: "expo.inOut", delay: 3.8 });
     </script>
 
   <!-- script animation menu -->

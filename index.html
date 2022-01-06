@@ -52,10 +52,13 @@
               <a class="nav-link more thin-text" href="#home">Home &nbsp;&nbsp;</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link more thin-text" href="#explore">Explore &nbsp;&nbsp;</a>
+              <a class="nav-link more thin-text" href="#footer">About &nbsp;&nbsp;</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link more thin-text" href="#footer">About &nbsp;&nbsp;</a>
+              <a class="nav-link more thin-text" href="Form-Contact.html">Contact Us &nbsp;&nbsp;</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://github.com/RayaAlkautsar" target="blank"><i class="bi bi-github github"></i></a>
             </li>
           </ul>
         </div>
@@ -64,7 +67,7 @@
     <!-- akhir navbar -->
 
     <!-- content -->
-    <section class="background" style="background-color: #23252f; padding-bottom: 9rem">
+    <section class="background" style="background-color: #23252f; padding-bottom: 1.5rem">
       <div class="container" id="home">
         <div class="row" style="margin-top: 70px">
           <div class="col-xl-11 gambar">
@@ -82,28 +85,39 @@
                 </video>
               </div>
             </div>
-            <div class="content">
-              <div class="row">
+            <div class="hide">
+              <div class="content">
+                <div class="row">
+                  <div class="hide">
+                    <div class="col-xl-12 head">
+                      <h1 class="header">Find a tools</h1>
+                      <h1 class="header" style="margin-top: -15px">for your projects.</h1>
+                    </div>
+                  </div>
+                </div>
                 <div class="hide">
-                  <div class="col-xl-12 head">
-                    <h1 class="header">Find a tools</h1>
-                    <h1 class="header" style="margin-top: -15px">for your projects</h1>
+                  <div class="desc mt-2">
+                    <p>Webb Tools is a website that helps you to find tools for faster website development.</p>
+                  </div>
+                </div>
+                <div class="hide">
+                  <div class="btn-group mt-3">
+                    <a href="#explore" class="explore-2">
+                      <button class="explore">Explore Now</button>
+                    </a>
                   </div>
                 </div>
               </div>
-              <div class="hide">
-                <div class="desc">
-                  <p>Webb Tools is a website that helps you to find tools for faster website development.</p>
-                </div>
-              </div>
-              <div class="hide">
-                <div class="btn-group mt-3">
-                  <button class="contact" style="border-radius: 10px">
-                    <a href="Form-Contact.html" class="contact-2">Contact Us <i class="bi bi-envelope-fill"></i> </a>
-                  </button>
-                </div>
-              </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="hide">
+        <div class="row scroll text-center" style="margin-top: 180px">
+          <div class="scroll-down">
+            <button class="down" style="border-radius: 10px">
+              <a href="#explore" class="down"><i class="bi bi-mouse"></i> scroll down</a>
+            </button>
           </div>
         </div>
       </div>
@@ -206,7 +220,7 @@
             <a href="Image-Utility.html">
               <img src="img/explore-image.png" alt="" srcset="" />
               <div class="card-body">
-                <h4>Image Utilities <i class="bi bi-caret-right"></i></h4>
+                <h4>Image Utility<i class="bi bi-caret-right"></i></h4>
                 <p class="title">You can find websites that provide compress, resize, remove background image, and edit images.</p>
               </div>
             </a>
@@ -240,7 +254,7 @@
     <script>
       var owl = $(".owl-carousel");
       owl.owlCarousel({
-        nav: true,
+        nav: false,
         margin: 90,
         responsive: {
           0: {
@@ -259,12 +273,13 @@
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script>
-      gsap.from("nav", { duration: 1, delay: 5.2, opacity: 0 });
+      gsap.from("nav", { duration: 0.5, delay: 5.2, opacity: 0 });
       gsap.from(".background", { duration: 1.5, y: "-100%", delay: 0.6, ease: "expo.inOut" });
       gsap.from(".video-content", { duration: 1, x: "100%", delay: 2.2, ease: "expo.out" });
-      gsap.from(".head", { duration: 1, y: "101%", ease: "expo.inOut", delay: 2.8 });
-      gsap.from(".desc", { duration: 1, y: "-100%", ease: "expo.inOut", delay: 3.1 });
-      gsap.from(".btn-group", { duration: 1, x: "-100%", ease: "expo.out", delay: 4.1 });
+      gsap.from(".head", { duration: 1, y: "103%", ease: "expo.inOut", delay: 2.8 });
+      gsap.from(".desc", { duration: 1, y: "-115%", ease: "expo.inOut", delay: 3.4 });
+      gsap.from(".btn-group", { duration: 1, x: "-100%", ease: "expo.out", delay: 4.4 });
+      gsap.from(".scroll", { duration: 1, y: "107%", ease: "expo.inOut", delay: 6 });
     </script>
 
     <!-- type effect

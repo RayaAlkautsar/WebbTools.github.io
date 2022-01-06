@@ -102,7 +102,7 @@
     <div class="container-fluid" style="margin-top: 100px">
       <div class="hide">
         <form name="webbtools-contact-form" class="justify-content-center">
-          <div class="alert alert-success alert-dismissible fade show d-none mt-3 text-success" role="alert">
+          <div class="alert alert-success alert-dismissible fade show d-none mt-3 my-alert text-success" role="alert">
             <strong>Thank you!</strong> Your message was sent successfully
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
@@ -157,6 +157,29 @@
       gsap.from(".message", { duration: 0.5, x: "-100%", delay: 2.8 });
       gsap.from(".input-3", { duration: 0.5, x: "-100%", delay: 3 });
       gsap.from(".btn-kirim", { duration: 0.3, x: "-100%", delay: 3.2 });
+    </script>
+
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbwUTCRESBOdjW8PDusjN5FCjk1yYaXVcbc0XRtc3Gs-brQu6RT7rRZD5ygoG2M5FHa3ng/exec";
+      const form = document.forms["webbtools-contact-form"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            myAlert.classList.toggle("d-none");
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
     </script>
 
     <!-- script animation menu -->

@@ -133,7 +133,7 @@
             <div class="form-floating" style="color: grey">
               <textarea class="form-control input-3 border-0 text-light" style="background-color: #2b2d37" placeholder="Message" name="message" id="floatingTextarea2" style="height: 100px"></textarea>
             </div>
-            <button type="submit" class="btn btn-kirim text-light" style="margin-top: 30px; background-color: #5c61ed">Send</button>
+            <button type="submit" class="btn btn-send text-light" style="margin-top: 30px; background-color: #5c61ed">Send</button>
             <button class="btn btn-loading d-none" style="margin-top: 30px; background-color: #5c61ed" type="button" disabled>
               <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
               Loading...
@@ -162,18 +162,18 @@
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbwUTCRESBOdjW8PDusjN5FCjk1yYaXVcbc0XRtc3Gs-brQu6RT7rRZD5ygoG2M5FHa3ng/exec";
       const form = document.forms["webbtools-contact-form"];
-      const btnKirim = document.querySelector(".btn-kirim");
+      const btnSend = document.querySelector(".btn-send");
       const btnLoading = document.querySelector(".btn-loading");
       const myAlert = document.querySelector(".my-alert");
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         btnLoading.classList.toggle("d-none");
-        btnKirim.classList.toggle("d-none");
+        btnSend.classList.toggle("d-none");
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
             btnLoading.classList.toggle("d-none");
-            btnKirim.classList.toggle("d-none");
+            btnSend.classList.toggle("d-none");
             myAlert.classList.toggle("d-none");
             form.reset();
             console.log("Success!", response);
